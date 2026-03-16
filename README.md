@@ -47,6 +47,7 @@ invoice-ai-reader/
 │   └── database.py     # SQL database management & schemas
 ├── tests/              # Unit and integration tests
 ├── .env                # API Keys and secrets (Local only)
+├── .env.example        # TODO: Variables examples list for github
 ├── .gitignore          # Git ignore rules
 ├── pyproject.toml      # Project dependencies and metadata (uv)
 └── README.md           # Project documentation
