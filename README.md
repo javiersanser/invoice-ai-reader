@@ -56,8 +56,9 @@ invoice-ai-reader/
 
 ## 🛠️ Roadmap / To-Do
 - [x] Initial project structure and Git setup.
-- [ ] Database schema design (SQLite).
-- [ ] Watchdog file monitor
+- [x] Database schema design (SQLite).
+- [ ] Database management functions.
+- [ ] Watchdog file monitor.
 - [ ] Gemini API integration for PDF/Image parsing.
 - [ ] Streamlit dashboard development.
 - [ ] Data validation logic.
@@ -69,6 +70,8 @@ invoice-ai-reader/
 * **Watchdog library docs:** https://python-watchdog.readthedocs.io/en/stable/api.html#module-watchdog.observers
 * **python-dotenv library docs:**  https://pypi.org/project/python-dotenv/
 * **Streamlit docs:** https://docs.streamlit.io/
+* **SQLite3 docs:** https://www.sqlite.org/docs.html
+
 
 
 

@@ -1,4 +1,42 @@
 # SQLite database management & schemas
 
+from os import close
 import sqlite3
+from src.config import DB_PATH
 
+def connect_db():
+    try:
+        conn = sqlite3.connect(DB_PATH)
+    except sqlite3.Error as e:
+        print(f"Error connecting to database: {e}")
+        return None
+    return conn
+
+def initialize_db():
+    conn = None
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS invoices(
+            id INTEGER PRIMARY KEY,
+            file_name TEXT NOT NULL,
+            file_path TEXT NOT NULL,
+            status TEXT DEFAULT 'pending' CHECK (status IN ('pending', 'completed', 'error')),
+            date TEXT,
+            tax_id TEXT,
+            vendor_name TEXT,
+            invoice_concept TEXT,
+            base_amount REAL,
+            vat_pct REAL,
+            vat_amount REAL,
+            total_amount REAL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+                       
+    except sqlite3.Error as e:
+        print(f"Error initializing database: {e}")
+    finally:
+        if conn:
+            conn.close()
