@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Security and secrets 
+.env
+.streamlit/
+
+# Data and Data Base
+# Ignore database files
+database_storage/*.db
+database_storage/*.sqlite
+
+# Ignore test documents used in the development
+data_input/
+
+# Others
+.DS_Store
+Thumbs.db
