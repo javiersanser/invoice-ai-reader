@@ -36,7 +36,10 @@ graph TD
 ## 📂 Project Structure Plan
 ```
 invoice-ai-reader/
-├── data/               # Input folder for invoice PDFs/Images
+├── data/               # Invoice PDFs/Images
+│   ├── inbox/          # Input folder for invoice PDFs/Images to be processed
+│   ├── archive/        # Archive folder for processed files with success
+│   └── errors/         # Error folder for processed files with errors
 ├── database/           # SQLite database storage
 ├── src/                # Source code
 │   ├── app.py          # Streamlit web dashboard
@@ -52,6 +55,7 @@ invoice-ai-reader/
 ## 🛠️ Roadmap / To-Do
 - [x] Initial project structure and Git setup.
 - [ ] Database schema design (SQLite).
+- [ ] Watchdog file monitor
 - [ ] Gemini API integration for PDF/Image parsing.
 - [ ] Streamlit dashboard development.
 - [ ] Data validation logic.
@@ -60,6 +64,11 @@ invoice-ai-reader/
 ## 📚 References
 * **Gemini API docs for PDF:** https://ai.google.dev/gemini-api/docs/document-processing
 * **Gemini API docs for Image:** https://ai.google.dev/gemini-api/docs/image-understanding
+* **Watchdog library docs:** https://python-watchdog.readthedocs.io/en/stable/api.html#module-watchdog.observers
+* **python-dotenv library docs:**  https://pypi.org/project/python-dotenv/
+* **Streamlit docs:** https://docs.streamlit.io/
+
+
 
 
 ## 📦 Installation & Setup
