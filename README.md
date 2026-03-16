@@ -19,6 +19,20 @@
 * **Database:** SQLite
 * **Environment:** `uv`
 
+## 🔀 Flowchart
+```mermaid
+graph TD
+    A[📂 data/inbox] -->|New PDF| B(👁️ Watchdog)
+    B -->|Event Detector| C{⚙️ Process}
+    C -->|1. Register| D[(🗄️ SQLite DB)]
+    C -->|2. Parse data| E[🤖 Gemini AI]
+    E -->|Data extracted| F{Success?}
+    F -->|Yes| G[📂 data/archive]
+    F -->|No| H[📂 data/errors]
+    G -->|Update Status| D
+    D -->|View| I[💻 Streamlit Dashboard]
+```
+
 ## 📂 Project Structure Plan
 ```
 invoice-ai-reader/
