@@ -28,6 +28,7 @@ invoice-ai-reader/
 │   ├── app.py          # Streamlit web dashboard
 │   ├── extractor.py    # Gemini API integration & logic
 │   └── database.py     # SQL database management & schemas
+├── tests/              # Unit and integration tests
 ├── .env                # API Keys and secrets (Local only)
 ├── .gitignore          # Git ignore rules
 ├── pyproject.toml      # Project dependencies and metadata (uv)
@@ -41,6 +42,11 @@ invoice-ai-reader/
 - [ ] Streamlit dashboard development.
 - [ ] Data validation logic.
 - [ ] Final project submission and video demo.
+
+## 📚 References
+* **Gemini API docs for PDF:** https://ai.google.dev/gemini-api/docs/document-processing
+* **Gemini API docs for Image:** https://ai.google.dev/gemini-api/docs/image-understanding
+
 
 ## 📦 Installation & Setup
 * TODO once finished the first version.
