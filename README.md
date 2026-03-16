@@ -12,7 +12,7 @@
 * **Local Storage:** Saves structured data into a SQLite database.
 * **Modern Tooling:** Managed with `uv` for lightning-fast dependency management.
 
-## 🛠️ Tech Stack
+## 🤖 Tech Stack
 * **Language:** Python 3.12+
 * **AI Model:** Google Gemini (Generative AI)
 * **Frontend:** Streamlit
@@ -29,4 +29,4 @@
 
 
 ## 📦 Installation & Setup
-* TODO once the finished the first version
+* TODO once finished the first version.
