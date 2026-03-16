@@ -42,6 +42,7 @@ invoice-ai-reader/
 │   └── errors/         # Error folder for processed files with errors
 ├── database/           # SQLite database storage
 ├── src/                # Source code
+│   ├── config.py       # Project configuration file get secrets, set paths, etc.
 │   ├── app.py          # Streamlit web dashboard
 │   ├── extractor.py    # Gemini API integration & logic
 │   └── database.py     # SQL database management & schemas
