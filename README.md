@@ -20,8 +20,7 @@
 * **Environment:** `uv`
 
 ## 📂 Project Structure Plan
-
-```text
+```
 invoice-ai-reader/
 ├── data/               # Input folder for invoice PDFs/Images
 ├── database/           # SQLite database storage
@@ -33,6 +32,7 @@ invoice-ai-reader/
 ├── .gitignore          # Git ignore rules
 ├── pyproject.toml      # Project dependencies and metadata (uv)
 └── README.md           # Project documentation
+```
 
 ## 🛠️ Roadmap / To-Do
 - [x] Initial project structure and Git setup.
@@ -41,7 +41,6 @@ invoice-ai-reader/
 - [ ] Streamlit dashboard development.
 - [ ] Data validation logic.
 - [ ] Final project submission and video demo.
-
 
 ## 📦 Installation & Setup
 * TODO once finished the first version.
