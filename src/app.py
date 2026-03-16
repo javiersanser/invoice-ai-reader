@@ -1,3 +1,5 @@
+# Entry point and streamlite user interface 
+
 def main():
     print("Hello from invoice-ai-reader!")
 
