@@ -1,8 +1,10 @@
 # SQLite database management & schemas
+# In production it should use a more secure method like SQLAlchemy. 
+# This is just for demonstration purposes.
 
 from os import close
 import sqlite3
-from src.config import DB_PATH
+from config import DB_PATH
 
 def connect_db():
     try:
@@ -40,3 +42,6 @@ def initialize_db():
     finally:
         if conn:
             conn.close()
+
+if __name__ == "__main__":
+    initialize_db()
