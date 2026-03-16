@@ -19,6 +19,21 @@
 * **Database:** SQLite
 * **Environment:** `uv`
 
+## 📂 Project Structure Plan
+
+```text
+invoice-ai-reader/
+├── data/               # Input folder for invoice PDFs/Images
+├── database/           # SQLite database storage
+├── src/                # Source code
+│   ├── app.py          # Streamlit web dashboard
+│   ├── extractor.py    # Gemini API integration & logic
+│   └── database.py     # SQL database management & schemas
+├── .env                # API Keys and secrets (Local only)
+├── .gitignore          # Git ignore rules
+├── pyproject.toml      # Project dependencies and metadata (uv)
+└── README.md           # Project documentation
+
 ## 🛠️ Roadmap / To-Do
 - [x] Initial project structure and Git setup.
 - [ ] Database schema design (SQLite).

@@ -15,11 +15,11 @@ wheels/
 
 # Data and Data Base
 # Ignore database files
-database_storage/*.db
-database_storage/*.sqlite
+database/*.db
+database/*.sqlite
 
 # Ignore test documents used in the development
-data_input/
+data/
 
 # Others
 .DS_Store
