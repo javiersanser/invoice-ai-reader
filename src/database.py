@@ -12,7 +12,7 @@ def connect_db():
     except sqlite3.Error as e:
         print(f"Error connecting to database: {e}")
         return None
-    return conn
+    return conn  # Return the database connection, be sure to close it after using this function.
 
 def initialize_db():
     conn = None
